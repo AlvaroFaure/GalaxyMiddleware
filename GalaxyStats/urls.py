@@ -20,7 +20,9 @@ from GalaxyStats import functions,views
 
 urlpatterns = [
         url('register/', functions.register, name='register'),
-        url('registerStats/', views.registerStats, name='registerStats'),
-        url('processesStats/', functions.processesStats, name='processesStats'),
-        url('workflowsStats/', functions.workflowsStats, name='workflowsStats'),
+        url('registerView/', views.registerView, name='registerView'),
+        url('processes/', functions.processes, name='processes'),
+        url('processesView/', functions.processesView, name='processesView'),
+        url('workflows/', functions.workflows, name='workflows'),
+        url('workflowsView/', functions.workflowsView, name='workflowsView'),
 ]
