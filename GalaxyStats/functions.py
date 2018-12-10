@@ -141,7 +141,7 @@ def workflowsView(request):
 
 	elif request.method == 'GET':
 
-		#subprocess.call(['./GalaxyStats/bash/workflows.sh','./GalaxyStats/bash/workflows.txt'])
+		subprocess.call(['./GalaxyStats/bash/workflows.sh','./GalaxyStats/bash/workflows.txt'])
 
 		file  = open("./GalaxyStats/bash/workflows.txt", "r")
 
@@ -172,7 +172,7 @@ def workflows(request):
 
 	elif request.method == 'GET':
 
-		#subprocess.call(['./GalaxyStats/bash/workflows.sh','./GalaxyStats/bash/workflows.txt'])
+		subprocess.call(['./GalaxyStats/bash/workflows.sh','./GalaxyStats/bash/workflows.txt'])
 
 		file  = open("./GalaxyStats/bash/workflows.txt", "r")
 
