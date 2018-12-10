@@ -50,7 +50,7 @@ def processesView(request):
 
 	elif request.method == 'GET':
 
-		#subprocess.call(['./GalaxyStats/bash/processes.sh','./GalaxyStats/bash/procesos.txt'])
+		subprocess.call(['./GalaxyStats/bash/processes.sh','./GalaxyStats/bash/procesos.txt'])
 
 		file  = open("./GalaxyStats/bash/procesos.txt", "r")
 
@@ -83,7 +83,7 @@ def processes(request):
 
 	elif request.method == 'GET':
 
-		#subprocess.call(['./GalaxyStats/bash/processes.sh','./GalaxyStats/bash/procesos.txt'])
+		subprocess.call(['./GalaxyStats/bash/processes.sh','./GalaxyStats/bash/procesos.txt'])
 
 		file  = open("./GalaxyStats/bash/procesos.txt", "r")
 
